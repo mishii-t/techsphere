@@ -1,0 +1,5 @@
+- [x] Add EmailJS CDN script to contact.html
+- [x] Update srip.js to use EmailJS for form submission
+- [x] Remove server.js file
+- [x] Update package.json to remove backend dependencies
+- [x] Update README.md to reflect EmailJS usage

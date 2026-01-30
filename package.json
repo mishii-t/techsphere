@@ -1,0 +1,6 @@
+{
+  "name": "techsphere-website",
+  "version": "1.0.0",
+  "description": "TechSphere website with EmailJS for contact form",
+  "main": "index.html"
+}

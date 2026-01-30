@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <title>Contact TechSphere – Get in Touch With Us</title>
+    <meta name="description" content="Contact TechSphere for questions, suggestions, collaborations, or feedback about our tech blog and content.">
+    <meta name="keywords" content="contact, get in touch, tech support, collaboration, feedback">
+    <link rel="canonical" href="contact.html">
+    <meta property="og:title" content="Contact TechSphere">
+    <meta property="og:description" content="Reach out to the TechSphere team with your questions and feedback.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact TechSphere">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" href="logo.svg" type="image/svg">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script async defer src="srip.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-section">
+            <a href="index.html"><img src="logo.svg" alt="TechSphere Logo" class="logo" /></a>
+            <a href="index.html"><h1>TechSphere</h1></a>
+        </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger">
+            <img src="images/side.png" alt="Menu">
+        </button>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <nav class="sidebar-nav">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <section class="contact-container">
+      <h2 class="section-title">Get in Touch</h2>
+
+      <div class="contact-card">
+        <p class="contact-text">
+          Have a question, suggestion, or collaboration idea? Send us a message
+          using the form below.
+        </p>
+
+        <form
+          class="contact-form"
+          id="contact-form"
+          action="#"
+          method="POST"
+          name="contact"
+          data-netlify="true"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+        <p
+          id="success-msg"
+          style="color: #00aaff; display: none; margin-top: 15px"
+        >
+          Thanks! Your message has been sent.
+        </p>
+
+        <script>
+          document
+            .querySelector("form")
+            .addEventListener("submit", function (e) {
+              const msg = document.getElementById("success-msg");
+              msg.style.display = "block";
+            });
+        </script>
+
+        <div class="contact-social">
+          <p>Or reach us on:</p>
+          <a href="#" target="_blank">Twitter</a> |
+          <a href="#" target="_blank">LinkedIn</a> |
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 TechSphere. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

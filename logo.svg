@@ -1,0 +1,26 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="globeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7b68ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00aaff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main globe circle -->
+  <circle cx="150" cy="150" r="80" fill="none" stroke="url(#globeGradient)" stroke-width="5"/>
+
+  <!-- Latitude lines -->
+  <circle cx="150" cy="150" r="70" fill="none" stroke="url(#globeGradient)" stroke-width="5" opacity="0.7"/>
+  <circle cx="150" cy="150" r="55" fill="none" stroke="url(#globeGradient)" stroke-width="5" opacity="0.7"/>
+  <circle cx="150" cy="150" r="40" fill="none" stroke="url(#globeGradient)" stroke-width="5" opacity="0.7"/>
+  <!-- Longitude lines -->
+  <line x1="150" y1="70" x2="150" y2="230" stroke="url(#globeGradient)" stroke-width="5" opacity="0.7"/>
+  <line x1="110" y1="90" x2="190" y2="210" stroke="url(#globeGradient)" stroke-width="5" opacity="0.7"/>
+  <line x1="190" y1="90" x2="110" y2="210" stroke="url(#globeGradient)" stroke-width="5" opacity="0.7"/>
+
+  <!-- Vertical divider lines -->
+  <line x1="100" y1="130" x2="200" y2="130" stroke="url(#globeGradient)" stroke-width="5" opacity="0.7"/>
+  <line x1="90" y1="150" x2="210" y2="150" stroke="url(#globeGradient)" stroke-width="5" opacity="0.7"/>
+  <line x1="100" y1="170" x2="200" y2="170" stroke="url(#globeGradient)" stroke-width="5" opacity="0.7"/>
+</svg>
